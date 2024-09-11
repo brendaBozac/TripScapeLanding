@@ -2,13 +2,6 @@
     margin: 0;
     padding: 0;
 }
-/* 
-.ContainerNavbar {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 .navbar {
     height: 5vmax;
@@ -78,12 +71,29 @@
     padding-bottom: 1.5vmax;
 }
 
+/* animaciones para el header */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(20px);
+    }
+  }
+  
+  .Header .container h1,
+  .Header .container h2 {
+    animation: fadeIn 2.5s ease-out forwards;
+  }
+
 body {
     background-color: #D8DFD8;
 }
 
 .publicidadAngostaDiv {
-    background-color: rgba(0, 0, 0, 0.925);
+    background-color: rgb(5, 5, 5);
     height: 3.5vmax;
     display: flex;
     flex-flow: row wrap;
@@ -132,7 +142,7 @@ body {
 }
 
 .subtitulos {
-    margin-top: 3.5vmax;
+    margin-top: 2vmax;
     color: #072C3C;
     font-size: 3vmax;
     font-family: "Kanit", sans-serif;
