@@ -64,7 +64,7 @@ $color-five:  */
 .Header .container {
   border: solid 5px #F2E2CE;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   padding: 3vmax;
