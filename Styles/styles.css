@@ -168,13 +168,6 @@ $color-five:  */
     color: rgb(21, 60, 89) !important;
     border-radius: 5px;
   }
-  /* 
-      Header {
-          height: 50vmax !important;
-
-
-      }
-   */
   .Header .container {
     padding-bottom: 5vmax;
     border: solid 3px #F2E2CE;
@@ -204,12 +197,6 @@ $color-five:  */
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
-  /* 
-      Header {
-          height: 70vmax !important;
-
-
-      } */
   .Header .container {
     padding-bottom: 5vmax;
     border: solid 3px #F2E2CE;
@@ -224,32 +211,33 @@ $color-five:  */
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
-@media screen and (max-width: 320px) {
-  /*  
-   Header {
-       height: 70vmax !important;
+/* 
+
+Header {
+        height: 70vmax !important;
 
 
-   }
+    }
 
-   .Header .container {
-       padding-bottom: 5vmax;
-       border: solid 3px #F2E2CE;
-       margin: 3vmax 5vmax;
-       height: 60%;
+    .Header .container {
+        padding-bottom: 5vmax;
+        border: solid 3px #F2E2CE;
+        margin: 3vmax 5vmax;
+        height: 60%;
 
 
-       h1 {
-           font-size: 6vmax;
+        h1 {
+            font-size: 6vmax;
 
-       }
+        }
 
-       h2 {
-           font-size: 4vmax;
-       }
+        h2 {
+            font-size: 4vmax;
+        }
 
-   } */
-}
+    }
+
+*/
 .publicidadAngostaDiv {
   background-color: rgb(5, 5, 5);
   height: 3.5vmax;

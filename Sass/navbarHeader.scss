@@ -229,13 +229,6 @@ animation: fadeIn 2.5s ease-out forwards;
         }
     }
 
-/* 
-    Header {
-        height: 50vmax !important;
-
-        
-    }
- */
     .Header .container {
         padding-bottom: 5vmax;
         border: solid 3px #F2E2CE;
@@ -296,13 +289,6 @@ animation: fadeIn 2.5s ease-out forwards;
 
 @media screen and (max-width:576px) {
     
-/* 
-    Header {
-        height: 70vmax !important;
-
-        
-    } */
-
     .Header .container {
         padding-bottom: 5vmax;
         border: solid 3px #F2E2CE;
@@ -327,8 +313,15 @@ animation: fadeIn 2.5s ease-out forwards;
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:320px) {
-   /*  
-    Header {
+    
+}
+
+
+
+
+/* 
+
+Header {
         height: 70vmax !important;
 
         
@@ -350,5 +343,6 @@ animation: fadeIn 2.5s ease-out forwards;
             font-size: 4vmax;
         }
 
-    } */
-}
+    }
+
+*/
