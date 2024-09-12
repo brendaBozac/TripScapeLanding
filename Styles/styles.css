@@ -1,150 +1,286 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background-color: #D8DFD8;
+}
+
+/* colores */
+/* $primary-color:
+$secondary-color:
+$color-three:
+$color-four:
+$color-five:  */
+/* fuentes */
 .navbar {
-    height: 5vmax;
+  height: 5vmax;
+}
+.navbar .ContainerNavbar {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .navbar-brand {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-brand .brandImg {
+  width: 5vmax;
+}
+.navbar-brand .brandText {
+  margin-bottom: 0;
+  color: rgb(13, 13, 13);
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
 }
 
-.brandImg {
-    width: 5vmax;
+.navbar-nav {
+  font-family: "Nunito Sans", sans-serif;
 }
-
-.brandText {
-    margin-bottom: 0;
-    color: rgb(13, 13, 13);
-    font-weight: bold;
-    font-family: "Archivo Black", sans-serif;
+.navbar-nav .nav-item .nav-link {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .Header {
-    background-image: url(../Img/header4.jpg);
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    height: 35vmax;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-
+  background-image: url(../Img/header4.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .Header .container {
-    border: solid 6px #F2E2CE;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 5vmax;
-    box-shadow: 2px 4px 6px black;
+  border: solid 5px #F2E2CE;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3vmax;
+  box-shadow: 2px 4px 6px black;
 }
 
 .Header .container h1 {
-    text-align: center;
-    color:#F2E2CE;
-    font-family: "Archivo Black", sans-serif;
-    font-size: 4.5vmax;
-    text-shadow: 2px 4px 6px black;
-    font-weight: bold;
-    border-top: solid 3px #F2E2CE;
-    padding-top: 1.5vmax;
-    
+  text-align: center;
+  color: #F2E2CE;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 4.5vmax;
+  text-shadow: 2px 4px 6px black;
+  font-weight: bold;
+  border-top: solid 2px #F2E2CE;
+  padding-top: 1.5vmax;
 }
 
 .Header .container h2 {
-    color:#F2E2CE;
-    font-size: 3vmax;
-    text-align: center;
-    text-shadow: 2px 4px 6px black;
-    font-weight: bold;
-    margin-top: 2vmax;
-    border-bottom: solid 3px #F2E2CE;
-    padding-bottom: 1.5vmax;
+  color: #F2E2CE;
+  font-size: 3vmax;
+  text-align: center;
+  text-shadow: 2px 4px 6px black;
+  font-weight: bold;
+  margin-top: 2vmax;
+  border-bottom: solid 2px #F2E2CE;
+  padding-bottom: 1.5vmax;
 }
 
 /* animaciones para el header */
 @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(20px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(0);
   }
-  
-  .Header .container h1,
-  .Header .container h2 {
-    animation: fadeIn 2.5s ease-out forwards;
+  100% {
+    opacity: 1;
+    transform: translateY(20px);
   }
-
-body {
-    background-color: #D8DFD8;
+}
+.Header .container h1,
+.Header .container h2 {
+  animation: fadeIn 2.5s ease-out forwards;
 }
 
-.publicidadAngostaDiv {
-    background-color: rgb(5, 5, 5);
-    height: 3.5vmax;
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 992px) {
+  .navbar {
+    height: 6vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
-    position: relative; /* Posiciona el contenedor relativamente para el texto animado */
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandImg {
+    width: 4vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandText {
+    font-size: 2vmax;
+  }
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    margin-bottom: 0.3vmax;
+  }
+  .navbar-collapse {
+    background-color: rgb(21, 60, 89);
+    margin: 3vmax;
+    padding: 1vmax;
+    border-radius: 10px;
+    padding-left: 2vmax;
+    z-index: 22;
+  }
+  .nav-link {
+    color: white !important;
+    font-weight: bold;
+  }
+  .nav-link:hover {
+    background-color: antiquewhite;
+    color: rgb(21, 60, 89) !important;
+    border-radius: 5px;
+    padding-left: 0.5vmax;
+  }
+  .dropdown-menu {
+    background-color: rgb(129, 166, 194);
+    border: none;
+  }
+  .dropdown-menu li .dropdown-item {
+    font-weight: bold;
+    color: rgb(21, 60, 89);
+  }
+  .dropdown-menu li .dropdown-item:hover {
+    font-weight: bold;
+    background-color: antiquewhite;
+    color: rgb(21, 60, 89) !important;
+    border-radius: 5px;
+  }
+  /* 
+      Header {
+          height: 50vmax !important;
+
+
+      }
+   */
+  .Header .container {
+    padding-bottom: 5vmax;
+    border: solid 3px #F2E2CE;
+  }
+  .Header .container h2 {
+    border-bottom: solid 2px #F2E2CE;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 8vmax;
+    padding-bottom: 0.4vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandImg {
+    width: 5vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandText {
+    font-size: 3vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  /* 
+      Header {
+          height: 70vmax !important;
+
+
+      } */
+  .Header .container {
+    padding-bottom: 5vmax;
+    border: solid 3px #F2E2CE;
+    margin: 3vmax 5vmax;
+    height: 60%;
+  }
+  .Header .container h1 {
+    font-size: 6vmax;
+  }
+  .Header .container h2 {
+    font-size: 4vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 320px) {
+  /*  
+   Header {
+       height: 70vmax !important;
+
+
+   }
+
+   .Header .container {
+       padding-bottom: 5vmax;
+       border: solid 3px #F2E2CE;
+       margin: 3vmax 5vmax;
+       height: 60%;
+
+
+       h1 {
+           font-size: 6vmax;
+
+       }
+
+       h2 {
+           font-size: 4vmax;
+       }
+
+   } */
+}
+.publicidadAngostaDiv {
+  background-color: rgb(5, 5, 5);
+  height: 3.5vmax;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
+  position: relative; /* Posiciona el contenedor relativamente para el texto animado */
 }
 
 .publicidadAngostaDiv p {
-    color: #EFD400;
-    text-align: start;
-    font-size: 1.5vmax;
-    font-weight: bold;
-    margin-bottom: 0;
-    font-family: "Nunito Sans", sans-serif;
-    position: absolute; /* Posiciona el texto de manera absoluta dentro del contenedor */
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    animation: scroll-text 20s linear infinite; /* Aplica la animación de desplazamiento */
+  color: #EFD400;
+  text-align: start;
+  font-size: 1.5vmax;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-family: "Nunito Sans", sans-serif;
+  position: absolute; /* Posiciona el texto de manera absoluta dentro del contenedor */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  animation: scroll-text 20s linear infinite; /* Aplica la animación de desplazamiento */
 }
-
-
 
 /* Animación del texto que se desliza de derecha a izquierda */
 @keyframes scroll-text {
-    0% {
-        transform: translateX(-100%); /* Comienza desde fuera del contenedor, a la izquierda */
-    }
-    100% {
-        transform: translateX(100%); /* Termina fuera del contenedor, a la derecha */
-    }
+  0% {
+    transform: translateX(-100%); /* Comienza desde fuera del contenedor, a la izquierda */
+  }
+  100% {
+    transform: translateX(100%); /* Termina fuera del contenedor, a la derecha */
+  }
 }
 
-.publicidadDiv {
-    background-color: #D8DFD8;
-    height: 40vmax;
-    width: 90%;
-    margin: 5vmax auto;
-    border:none;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px 1px 12px black;
-}
-
-.subtitulos {
-    margin-top: 2vmax;
-    color: #072C3C;
-    font-size: 3vmax;
-    font-family: "Kanit", sans-serif;
-    text-align: center;
-}
+/*# sourceMappingURL=styles.css.map */
