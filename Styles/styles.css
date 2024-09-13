@@ -69,6 +69,7 @@ $color-five:  */
   align-items: center;
   padding: 3vmax;
   box-shadow: 2px 4px 6px black;
+  height: 28vmax;
 }
 
 .Header .container h1 {
@@ -88,7 +89,7 @@ $color-five:  */
   text-align: center;
   text-shadow: 2px 4px 6px black;
   font-weight: bold;
-  margin-top: 2vmax;
+  padding-top: 2vmax;
   border-bottom: solid 2px #F2E2CE;
   padding-bottom: 1.5vmax;
 }
@@ -169,12 +170,22 @@ $color-five:  */
     border-radius: 5px;
   }
   .Header .container {
-    padding-bottom: 5vmax;
     border: solid 3px #F2E2CE;
+    height: 34vmax;
   }
   .Header .container h2 {
+    font-size: 3.5vmax;
     border-bottom: solid 2px #F2E2CE;
   }
+  .Header .container h1 {
+    font-size: 5vmax;
+    border-top: solid 2px #F2E2CE;
+  }
+  /*  
+     .Header .container h2 {
+
+     }
+  */
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
@@ -194,14 +205,26 @@ $color-five:  */
   .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandText {
     font-size: 3vmax;
   }
+  .Header .container {
+    height: 48vmax;
+  }
+  .Header .container h1 {
+    font-size: 6vmax;
+  }
+  .Header .container h2 {
+    font-size: 4.5vmax;
+  }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
+  .navbar {
+    padding-bottom: 0.8vmax;
+  }
   .Header .container {
     padding-bottom: 5vmax;
     border: solid 3px #F2E2CE;
     margin: 3vmax 5vmax;
-    height: 60%;
+    height: 55vmax;
   }
   .Header .container h1 {
     font-size: 6vmax;
@@ -211,33 +234,11 @@ $color-five:  */
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
-/* 
-
-Header {
-        height: 70vmax !important;
-
-
-    }
-
-    .Header .container {
-        padding-bottom: 5vmax;
-        border: solid 3px #F2E2CE;
-        margin: 3vmax 5vmax;
-        height: 60%;
-
-
-        h1 {
-            font-size: 6vmax;
-
-        }
-
-        h2 {
-            font-size: 4vmax;
-        }
-
-    }
-
-*/
+@media screen and (max-width: 320px) {
+  .Header .container {
+    height: 75vmax;
+  }
+}
 .publicidadAngostaDiv {
   background-color: rgb(5, 5, 5);
   height: 3.5vmax;
