@@ -238,21 +238,18 @@ animation: fadeIn 2.5s ease-out forwards;
        
     }
 
-    .Header .container h2 {
-        font-size: 3.5vmax;
-        border-bottom: solid 2px #F2E2CE;
-    }
-    
     
     .Header .container h1 {
         font-size: 5vmax;
         border-top: solid 2px #F2E2CE;
     }
-   /*  
+
     .Header .container h2 {
-        
+        font-size: 3.5vmax;
+        border-bottom: solid 2px #F2E2CE;
     }
- */
+    
+   
 }
 
 
@@ -338,13 +335,37 @@ animation: fadeIn 2.5s ease-out forwards;
 }
 
 
+/* medida personalizada 420 */
+
+
+
+@media screen and (max-width:420px) {
+
+
+    .Header .container {
+        border:none;
+        box-shadow: none;
+
+    
+        h1 {
+            font-size: 5vmax;
+            padding-top: 4vmax;
+            border-top: solid 4px #F2E2CE;
+        }
+        
+        h2 {
+            font-size: 4vmax;
+            padding-bottom: 4vmax;
+            border-bottom: solid 4px #F2E2CE;
+        }
+    }
+
+
+}
+
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:320px) {
 
-
-    .Header .container {
-        height: 75vmax;
-    }
 
 }
