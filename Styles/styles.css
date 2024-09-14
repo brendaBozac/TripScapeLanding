@@ -216,8 +216,9 @@ $color-five:  */
     padding-bottom: 0.8vmax;
   }
   .Header .container {
+    border: none;
+    box-shadow: none;
     padding-bottom: 5vmax;
-    border: solid 3px #F2E2CE;
     margin: 3vmax 5vmax;
     height: 55vmax;
   }
